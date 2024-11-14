@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UKM IT - Sekolah Tinggi Ilmu Komputer CKI</title>
+    <link rel="icon" type="image/x-icon" href="image/LOGO_UKM_IT.jpeg">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navigation">
+            <img src="image/LOGO_UKM_IT_Fixed.png" alt="Logo UKM IT" class="logo"/>
+                <h1><a href="Index.html" class="link">UKM TI CIPTA KARYA INFORMATIKA</h1>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="Index.html" class="link">Home</a></li>
+                    <li><a href="About.html" class="link">About</a></li>
+                    <li><a href="Contact.html" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <h2>Dashboard UKM IT</h2>
+        <div class="dashboard-summary">
+            <div class="dashboard-item">
+                <h3>Pengunjung Bulanan</h3>
+                <p id="visitor-count">0</p> 
+            </div>
+            <div class="dashboard-item">
+                <h3>Anggota Terdaftar</h3>
+                <p id="member-count">150</p> 
+            </div>
+            <div class="dashboard-item">
+                <h3>Pelatihan Aktif</h3>
+                <p>5</p>
+            </div>
+            <div class="dashboard-item">
+                <h3>Notifikasi Baru</h3>
+                <p id="notification-count">0</p> 
+            </div>
+        </div>
+        <div class="dashboard-charts">
+            <div class="chart">
+                <h3>Kegiatan</h3>
+                <img src="image/chart-placeholder.png" alt="Grafik Statistik" class="chart-img">
+            </div>
+            <div class="chart">
+                <h3>Struktur UKM</h3>
+                <img src="image/chart-placeholder.png" alt="Grafik Anggota" class="chart-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <ul>
+            <li>Pelatihan Pemrograman</li>
+            <li>Workshop Teknologi</li>
+            <li>Proyek Kolaboratif</li>
+            <li>Konsultasi IT</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 UKM IT Sekolah Tinggi Ilmu Komputer CKI. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav ul').classList.toggle('active');
+        }
+    </script>
+</body>
+    <footer class="footer-secondary">
+        <p>Kontak Kami: Sekolah Tinggi Ilmu Komputer CKI, Jl. Raya No. 123, Jakarta</p>
+        <div id="osm-map" style="width:100%;height:300px;"></div>
+    </footer>
+
+    <!-- Leaflet CSS dan JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="index.js"></script>
+</html>

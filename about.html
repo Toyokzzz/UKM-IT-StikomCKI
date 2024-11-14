@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - UKM IT STIKOM CKI</title>
+    <link rel="icon" type="image/x-icon" href="image/LOGO_UKM_IT.jpeg">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navigation">
+            <img src="image/LOGO_UKM_IT_Fixed.png" alt="Logo UKM IT" class="logo" />
+            <h1><a href="Index.html" class="link">UKM TI CIPTA KARYA INFORMATIKA</h1>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li><a href="#" class="link active">About</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>TENTANG UKM IT STIKOM CKI</h2>
+        <div class="about-content">
+            <p>UKM IT STIKOM CKI adalah unit kegiatan mahasiswa yang berfokus pada pengembangan keterampilan di bidang teknologi informasi. Dibentuk dengan tujuan untuk menjadi wadah pengembangan bagi mahasiswa dalam menguasai teknologi terkini, UKM IT menyediakan berbagai Pelatihan, Workshop, dan Proyek Kolaboratif.</p>
+            <h3>Visi Kami</h3>
+            <p>Menjadikan Unit Kegiatan Mahasiswa (UKM) sebagai tempat untuk menyalurkan  potensi - potensi muda dalam perkembangan Teknologi dan Informasi.</p>
+            <h3>Misi Kami</h3>
+            <ul>
+                <li>Mewadahi mahasiswa STIKOM CKI yang memiliki bakat-bakat  terpendam dalam mengelola IT.</li>
+                <li>Berperan aktif dalam mengikuti perkembangan IT.</li>
+                <li>Mencetak mahasiswa yang informatif  dan inovatif  yang dapat  bersaing  secara global  di era digital ini, khususnya mahasiswa STIKOM CKI sehingga menghasilkan mahasiswa yang terampil.</li>
+            </ul>
+            <h3>Pencapaian</h3>
+            <p>Sejak berdiri, UKM IT STIKOM CKI telah berhasil mencetak mahasiswa yang memenangkan berbagai kompetisi IT nasional serta mengadakan event besar seperti Hackathon Kampus dan Seminar Teknologi.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 UKM IT Sekolah Tinggi Ilmu Komputer CKI. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav ul').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
